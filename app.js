@@ -10,6 +10,7 @@ var app = express();
 app.use(bodyParser.json());
 
 app.post('/todo', (req, res) =>{
+  console.log("body", req.body);
   var todo = new Todo({
     text: req.body.text
   });
@@ -23,5 +24,5 @@ app.post('/todo', (req, res) =>{
 });
 
 app.listen(3000, ()=> {
-  console.log('Started at port 3000.');
+  console.log('Started at port TCP 3000.');
 });
