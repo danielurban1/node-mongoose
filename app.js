@@ -28,5 +28,5 @@ app.get('/asad', (req, res) =>{
 // });
 
 app.listen(3000, ()=> {
-  console.log('Started at', mongoose.connections);
+  console.log('Started at');
 });
