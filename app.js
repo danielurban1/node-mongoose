@@ -24,5 +24,5 @@ app.post('/todo', (req, res) =>{
 });
 
 app.listen(3000, ()=> {
-  console.log('Started at port TCP 3000.');
+  console.log('Started at', mongoose.connections);
 });
